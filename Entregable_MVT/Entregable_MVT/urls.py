@@ -20,8 +20,8 @@ from MVT_app_entregable.views import new_member,list_members,new_friend,list_fri
 
 
 urlpatterns = [
+    path('', inicio),
     path('admin/', admin.site.urls),
-    path('inicio/', inicio),
     path('nuevo-familliar/', new_member),
     path('famillia/', list_members),
     path('nuevo-amigo/', new_friend),
