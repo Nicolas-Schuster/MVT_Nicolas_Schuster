@@ -8,3 +8,7 @@ class family(models.Model):
     male = models.BooleanField()
     
 
+class friends(models.Model):
+    name = models.CharField(max_length=50)
+    age = models.IntegerField()
+    male = models.BooleanField()

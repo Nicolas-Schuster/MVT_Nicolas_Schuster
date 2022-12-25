@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Entregable_MVT.views import inicio
-from MVT_app_entregable.views import new_member,list_members
+from MVT_app_entregable.views import new_member,list_members,new_friend,list_friends
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('inicio/', inicio),
     path('nuevo-familliar/', new_member),
-    path('lista-famillia/', list_members),
+    path('famillia/', list_members),
+    path('nuevo-amigo/', new_friend),
+    path('amigos/', list_friends),
 ]
